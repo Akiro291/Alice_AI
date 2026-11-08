@@ -1,0 +1,26 @@
+
+  "name": "alice-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Agent для управления Windows и браузером",
+  "mode": "auto",
+  "servers": [
+    {
+      "name": "windows-mcp",
+      "command": "uvx windows-mcp serve",
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "name": "playwright-mcp",
+      "command": "npx @playwright/mcp@latest",
+      "enabled": true,
+      "priority": 2
+    }
+  ],
+  "settings": {
+    "timeout": 30,
+    "retry_attempts": 3,
+    "log_level": "INFO"
+  },
+  "status": "ok"
+}

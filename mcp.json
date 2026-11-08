@@ -22,5 +22,4 @@
     "retry_attempts": 3,
     "log_level": "INFO"
   },
-  "status": "ok"
-}
+  "status": "ok",
